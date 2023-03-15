@@ -19,7 +19,16 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label26")
+                .setLeft("25.904761904761905em")
+                .setTop("19.80952380952381em")
+                .setWidth("12.342857142857143em")
+                .setCaption("Your server is unable! please use Asia VPN to acces this file")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
